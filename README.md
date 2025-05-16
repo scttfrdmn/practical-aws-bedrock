@@ -91,6 +91,26 @@ Set up your AWS credentials using one of the following methods:
 
 Ensure you have the appropriate permissions to access Amazon Bedrock services.
 
+## Project Structure
+
+This project is organized to facilitate both learning and blog post creation:
+
+```
+aws-bedrock-inference/
+├── benchmarks/       # Performance testing and visualization
+├── docs/             # Comprehensive documentation for blog posts
+├── src/              # Core implementation modules
+│   ├── inference/    # Basic inference implementations
+│   ├── converse/     # Converse API implementations
+│   ├── construct/    # Construct API implementations
+│   └── examples/     # Complete example applications
+├── tutorials/        # Step-by-step learning materials
+│   ├── basic/        # Getting started tutorials
+│   ├── intermediate/ # More advanced concepts
+│   └── advanced/     # Complex optimization strategies
+└── utils/            # Helper functions and tools
+```
+
 ## Examples
 
 The repository includes examples for different inference scenarios:
@@ -101,6 +121,8 @@ The repository includes examples for different inference scenarios:
 - Structured data generation with Construct API
 - Hybrid approaches for mixed workloads
 - Handling quota limits gracefully
+
+Each example includes detailed code comments, performance benchmarks, and optimization techniques.
 
 ## Contributing
 
