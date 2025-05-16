@@ -1,10 +1,12 @@
 # AWS Bedrock Inference Optimization
 
-A practical guide to AWS Bedrock inference methods, focusing on optimizing throughput within account quota limitations.
+A practical guide to AWS Bedrock inference methods using Python, focusing on optimizing throughput within account quota limitations.
 
 ## Overview
 
 This project explores the various inference methods available in Amazon Bedrock and provides strategies for maximizing throughput within your account's quota limitations. By understanding the different inference approaches and their tradeoffs, you can select the optimal method for your specific use case.
+
+All examples and tutorials use Python with boto3 and AWS Bedrock SDK to demonstrate real-world implementation patterns.
 
 ## Inference Methods
 
@@ -42,7 +44,40 @@ This project demonstrates techniques for:
 
 ## Getting Started
 
-[Project setup and usage instructions will be added here]
+### Prerequisites
+
+- Python 3.8+
+- AWS Account with access to Amazon Bedrock
+- Required Python packages:
+  - boto3
+  - botocore
+  - aws-bedrock-runtime
+  - aws-bedrock-sdk
+  - concurrent.futures (for parallel processing examples)
+
+### Installation
+
+```bash
+# Clone this repository
+git clone https://github.com/yourusername/aws-bedrock-inference.git
+cd aws-bedrock-inference
+
+# Create and activate a virtual environment (optional but recommended)
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+### Configuration
+
+Set up your AWS credentials using one of the following methods:
+- AWS CLI: `aws configure`
+- Environment variables
+- Credentials file
+
+Ensure you have the appropriate permissions to access Amazon Bedrock services.
 
 ## Examples
 
