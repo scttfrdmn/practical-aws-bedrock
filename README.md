@@ -32,6 +32,18 @@ AWS Bedrock supports multiple inference methods, each with different characteris
 - Higher throughput potential for offline processing
 - Working with job queues and monitoring
 
+### Conversational AI (Converse API)
+- Handles multi-turn conversations with context management
+- Specialized for chat applications and dialogue systems
+- Built-in conversation state tracking and memory management
+- Optimizing conversation history within token limits
+
+### Structured Outputs (Construct API)
+- Specialized for generating structured data (JSON, XML)
+- Enforces output schemas for consistent results
+- Strategies for reliable parsing and validation
+- Optimizing quota usage with structured generation
+
 ## Quota Optimization Strategies
 
 This project demonstrates techniques for:
@@ -85,6 +97,8 @@ The repository includes examples for different inference scenarios:
 
 - High-volume batch processing
 - Real-time chat applications with streaming
+- Multi-turn conversations with Converse API
+- Structured data generation with Construct API
 - Hybrid approaches for mixed workloads
 - Handling quota limits gracefully
 
