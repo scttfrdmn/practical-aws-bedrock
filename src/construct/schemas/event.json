@@ -1,0 +1,155 @@
+{
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Name or title of the event"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date of the event (YYYY-MM-DD format)"
+    },
+    "start_time": {
+      "type": "string",
+      "description": "Start time of the event"
+    },
+    "end_time": {
+      "type": "string",
+      "description": "End time of the event"
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "venue": {
+          "type": "string",
+          "description": "Name of the venue"
+        },
+        "address": {
+          "type": "string",
+          "description": "Street address of the venue"
+        },
+        "city": {
+          "type": "string",
+          "description": "City where the event takes place"
+        },
+        "state": {
+          "type": "string",
+          "description": "State or province"
+        },
+        "zip": {
+          "type": "string",
+          "description": "ZIP or postal code"
+        }
+      },
+      "required": ["venue", "city"],
+      "description": "Event location details"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the event"
+    },
+    "organizer": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of the organizer or organization"
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "description": "Contact email"
+        },
+        "website": {
+          "type": "string",
+          "format": "uri",
+          "description": "Website URL"
+        }
+      },
+      "required": ["name"],
+      "description": "Event organizer information"
+    },
+    "registration": {
+      "type": "object",
+      "properties": {
+        "required": {
+          "type": "boolean",
+          "description": "Whether registration is required"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Registration URL"
+        },
+        "deadline": {
+          "type": "string",
+          "format": "date",
+          "description": "Registration deadline date"
+        }
+      },
+      "description": "Registration information"
+    },
+    "tickets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "Ticket type (e.g., 'General Admission', 'VIP')"
+          },
+          "price": {
+            "type": "number",
+            "minimum": 0,
+            "description": "Ticket price"
+          },
+          "currency": {
+            "type": "string",
+            "description": "Currency for ticket price"
+          },
+          "available": {
+            "type": "boolean",
+            "description": "Whether tickets are available"
+          }
+        },
+        "required": ["type", "price"]
+      },
+      "description": "Ticket information"
+    },
+    "speakers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Speaker name"
+          },
+          "title": {
+            "type": "string",
+            "description": "Speaker's professional title"
+          },
+          "bio": {
+            "type": "string",
+            "description": "Short biography"
+          }
+        },
+        "required": ["name"]
+      },
+      "description": "Event speakers"
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Event categories or tags"
+    },
+    "is_virtual": {
+      "type": "boolean",
+      "description": "Whether the event is virtual/online"
+    }
+  },
+  "required": ["title", "date", "location"]
+}

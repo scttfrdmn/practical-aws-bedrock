@@ -1,0 +1,84 @@
+{
+  "type": "object",
+  "properties": {
+    "product_name": {
+      "type": "string",
+      "description": "The name of the product"
+    },
+    "price": {
+      "type": "number",
+      "minimum": 0,
+      "description": "The price of the product in USD"
+    },
+    "description": {
+      "type": "string",
+      "description": "A detailed description of the product"
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of key product features"
+    },
+    "specifications": {
+      "type": "object",
+      "properties": {
+        "dimensions": {
+          "type": "string",
+          "description": "Physical dimensions of the product"
+        },
+        "weight": {
+          "type": "string",
+          "description": "Weight of the product with units"
+        },
+        "materials": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Materials used in the product's construction"
+        }
+      },
+      "description": "Technical specifications of the product"
+    },
+    "in_stock": {
+      "type": "boolean",
+      "description": "Whether the product is currently in stock"
+    },
+    "rating": {
+      "type": "object",
+      "properties": {
+        "average": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 5,
+          "description": "Average customer rating from 0-5"
+        },
+        "count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of customer ratings"
+        }
+      },
+      "description": "Customer rating information"
+    },
+    "category": {
+      "type": "string",
+      "description": "Product category"
+    },
+    "release_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date when the product was released"
+    },
+    "colors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Available color options"
+    }
+  },
+  "required": ["product_name", "price", "description", "in_stock"]
+}

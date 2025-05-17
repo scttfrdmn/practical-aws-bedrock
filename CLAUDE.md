@@ -71,3 +71,40 @@ Examples should cover all supported modalities:
 - Multimodal (text+image)
 - Document processing
 - Audio processing (if/when available)
+
+## Code Implementation Standards
+
+For all code implementations in this project:
+
+1. **Error Handling**: Implement exponential backoff with jitter for all API calls
+2. **Quota Awareness**: All clients should monitor usage and adapt to quota limits
+3. **Metrics Collection**: Track and log key performance metrics (latency, token usage, etc.)
+4. **Documentation**: Include detailed docstrings for all functions and classes
+5. **Type Hints**: Use Python type annotations for better code quality
+
+## File Organization
+
+Follow these naming conventions for all source files:
+
+1. Use snake_case for filenames (e.g., `synchronous_client.py`)
+2. Group related functionality in appropriately named modules
+3. Place shared utilities in the `utils` directory
+4. Keep examples separate from core implementation
+
+## Testing Requirements
+
+All implementations should include:
+
+1. Unit tests for core functionality
+2. Integration tests that validate AWS service interaction
+3. Performance benchmarking tests
+4. Error condition tests
+
+## Development Workflow
+
+When adding new features or examples:
+
+1. First implement core functionality with proper error handling
+2. Add comprehensive documentation with usage examples
+3. Create benchmark tests to measure performance
+4. Add tutorial content explaining when and how to use the feature

@@ -1,0 +1,110 @@
+{
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Full name of the person"
+    },
+    "age": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Age in years"
+    },
+    "occupation": {
+      "type": "string",
+      "description": "Job title or professional role"
+    },
+    "contact": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string",
+          "format": "email",
+          "description": "Email address"
+        },
+        "phone": {
+          "type": "string",
+          "description": "Phone number"
+        },
+        "address": {
+          "type": "object",
+          "properties": {
+            "street": {
+              "type": "string",
+              "description": "Street address"
+            },
+            "city": {
+              "type": "string",
+              "description": "City"
+            },
+            "state": {
+              "type": "string",
+              "description": "State or province"
+            },
+            "zip": {
+              "type": "string",
+              "description": "ZIP or postal code"
+            },
+            "country": {
+              "type": "string",
+              "description": "Country"
+            }
+          }
+        }
+      }
+    },
+    "education": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "institution": {
+            "type": "string",
+            "description": "Name of educational institution"
+          },
+          "degree": {
+            "type": "string",
+            "description": "Degree or certification earned"
+          },
+          "field": {
+            "type": "string",
+            "description": "Field of study"
+          },
+          "year": {
+            "type": "integer",
+            "description": "Year completed"
+          }
+        },
+        "required": ["institution"]
+      },
+      "description": "Educational background"
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Professional or technical skills"
+    },
+    "languages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "language": {
+            "type": "string",
+            "description": "Language name"
+          },
+          "proficiency": {
+            "type": "string",
+            "enum": ["beginner", "intermediate", "advanced", "native"],
+            "description": "Level of language proficiency"
+          }
+        },
+        "required": ["language"]
+      },
+      "description": "Languages spoken"
+    }
+  },
+  "required": ["name"]
+}
