@@ -1,12 +1,17 @@
-# AWS Bedrock Inference Optimization
+# Practical AWS Bedrock
 
-A practical guide to AWS Bedrock inference methods using Python, focusing on optimizing throughput within account quota limitations.
+A comprehensive, action-oriented guide to building generative AI applications with AWS Bedrock.
 
-## Overview
+## About This Project
 
-This project explores the various inference methods available in Amazon Bedrock and provides strategies for maximizing throughput within your account's quota limitations. By understanding the different inference approaches and their tradeoffs, you can select the optimal method for your specific use case.
+Practical AWS Bedrock provides hands-on guidance for developers looking to build production-ready generative AI applications using Amazon Bedrock. This resource focuses on real-world implementation patterns rather than theoretical concepts, with a conversational approach that makes complex topics accessible without oversimplification.
 
-All examples and tutorials use Python with boto3 and AWS Bedrock SDK to demonstrate real-world implementation patterns.
+## What You'll Find Here
+
+- **Practical Code Examples**: Production-ready code with proper error handling, quota management, and optimization
+- **Step-by-Step Tutorials**: Guided implementations for common use cases
+- **Comprehensive Documentation**: Detailed guides for all AWS Bedrock features
+- **Performance Optimization**: Techniques for maximizing throughput, minimizing costs, and scaling effectively
 
 ## Inference Methods
 
@@ -44,35 +49,30 @@ AWS Bedrock supports multiple inference methods, each with different characteris
 - Strategies for reliable parsing and validation
 - Optimizing quota usage with structured generation
 
-## Quota Optimization Strategies
-
-This project demonstrates techniques for:
-
-- Measuring and monitoring your current quota usage
-- Implementing backoff and retry strategies
-- Managing token usage through prompt engineering
-- Parallelization techniques within quota constraints
-- Rate limiting and request scheduling approaches
-
 ## Getting Started
 
-### Prerequisites
+Choose a learning path based on your needs:
 
+1. [Introduction to AWS Bedrock](/docs/01-introduction.md)
+2. [Foundation Models Guide](/docs/foundation-models.md)
+3. [Core Inference Methods](/docs/inference-methods/)
+4. [Token Quota Optimization Tutorial](/tutorials/advanced/token-quota-optimization.md)
+
+For a structured approach to learning, follow the [complete learning path](/LEARNING_PATH.md).
+
+## Prerequisites
+
+- AWS Account with Amazon Bedrock access
 - Python 3.8+
-- AWS Account with access to Amazon Bedrock
-- Required Python packages:
-  - boto3
-  - botocore
-  - aws-bedrock-runtime
-  - aws-bedrock-sdk
-  - concurrent.futures (for parallel processing examples)
+- Basic understanding of generative AI concepts
+- AWS CLI configured with appropriate credentials
 
-### Installation
+## Installation
 
 ```bash
-# Clone this repository
-git clone https://github.com/yourusername/aws-bedrock-inference.git
-cd aws-bedrock-inference
+# Clone the repository
+git clone https://github.com/YOUR-USERNAME/practical-aws-bedrock.git
+cd practical-aws-bedrock
 
 # Create and activate a virtual environment (optional but recommended)
 python -m venv venv
@@ -82,21 +82,10 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### Configuration
-
-Set up your AWS credentials using one of the following methods:
-- AWS CLI: `aws configure`
-- Environment variables
-- Credentials file
-
-Ensure you have the appropriate permissions to access Amazon Bedrock services.
-
 ## Project Structure
 
-This project is organized to facilitate both learning and blog post creation:
-
 ```
-aws-bedrock-inference/
+practical-aws-bedrock/
 ├── benchmarks/       # Performance testing and visualization
 ├── docs/             # Comprehensive documentation for blog posts
 ├── src/              # Core implementation modules
@@ -131,3 +120,12 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- AWS for the Amazon Bedrock service
+- The open source community for inspiration and shared knowledge
+
+---
+
+*This resource is not affiliated with or endorsed by Amazon Web Services.*
