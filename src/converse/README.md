@@ -18,23 +18,24 @@ Key benefits:
 converse/
 ├── basic/               # Basic implementation examples
 │   ├── simple_chat.py   # Simple chat implementation
-│   ├── memory.py        # Conversation memory management
-│   └── parameters.py    # Parameter tuning examples
+│   ├── memory.py        # Conversation memory management (Planned)
+│   └── parameters.py    # Parameter tuning examples (Planned)
 │
 ├── advanced/            # Advanced implementation examples
-│   ├── streaming.py     # Streaming conversation responses
-│   ├── tools.py         # Function calling with Converse API
-│   └── multimodal.py    # Handling images in conversations
+│   ├── streaming.py     # Streaming conversation responses (Planned)
+│   ├── tools.py         # Function calling with Converse API (Planned)
+│   └── multimodal.py    # Handling images in conversations (Planned)
 │
 ├── utils/               # Shared utilities
-│   ├── history.py       # Conversation history management
-│   ├── token_limit.py   # Token limit optimization utilities
-│   └── templates.py     # System prompt templates
+│   ├── history.py       # Conversation history management (Planned)
+│   ├── token_limit.py   # Token limit optimization utilities (Planned)
+│   └── templates.py     # System prompt templates (Planned)
 │
 └── examples/            # Complete application examples
-    ├── chatbot.py       # Complete chatbot implementation
-    ├── qa_system.py     # Question answering with context
-    └── agent.py         # Tool-using agent implementation
+    ├── converse_example.py # Basic conversation examples
+    ├── chatbot.py        # Complete chatbot implementation (Planned)
+    ├── qa_system.py      # Question answering with context (Planned)
+    └── agent.py          # Tool-using agent implementation (Planned)
 ```
 
 ## Usage Examples
@@ -42,82 +43,65 @@ converse/
 ### Basic Conversation
 
 ```python
-from aws_bedrock_inference.converse.basic.simple_chat import ConverseClient
+from src.converse.basic.simple_chat import ConverseClient
 
 # Create a client
 client = ConverseClient(model_id="anthropic.claude-3-sonnet-20240229-v1:0")
 
 # Start a conversation
-conversation_id = client.create_conversation()
+conversation_id = client.create_conversation(
+    system_prompt="You are a helpful assistant specializing in AWS services."
+)
 
 # Send messages and get responses
-response = client.send_message(conversation_id, "Hello! Can you help me with AWS Bedrock?")
+response = client.send_message(
+    conversation_id=conversation_id,
+    message="What is AWS Bedrock and what can I do with it?"
+)
 print(response)
 
 # Continue the conversation
-response = client.send_message(conversation_id, "What are the different inference methods available?")
+response = client.send_message(
+    conversation_id=conversation_id,
+    message="Which foundation models does it support?"
+)
 print(response)
 ```
 
-### Conversation with Memory Management
+### Interactive Chat Example
 
 ```python
-from aws_bedrock_inference.converse.basic.memory import MemoryAwareConverseClient
+# Run the interactive chat example
+from src.converse.examples.converse_example import interactive_chat_example
 
-# Create a memory-aware client that optimizes token usage
-client = MemoryAwareConverseClient(
-    model_id="anthropic.claude-3-sonnet-20240229-v1:0",
-    max_history_tokens=8000
-)
-
-# Start a conversation with a system prompt
-conversation_id = client.create_conversation(
-    system_prompt="You are an AWS expert specializing in foundation models."
-)
-
-# Conversation will automatically manage history token usage
-for i in range(20):
-    user_message = input("> ")
-    if user_message.lower() == "exit":
-        break
-    
-    response = client.send_message(conversation_id, user_message)
-    print(f"Assistant: {response}")
-```
-
-### Streaming Conversation
-
-```python
-from aws_bedrock_inference.converse.advanced.streaming import StreamingConverseClient
-
-# Create a streaming client
-client = StreamingConverseClient(model_id="anthropic.claude-3-sonnet-20240229-v1:0")
-
-# Start a conversation
-conversation_id = client.create_conversation()
-
-# Send a message and stream the response
-user_message = "Write a short story about space exploration."
-for chunk in client.send_message_streaming(conversation_id, user_message):
-    print(chunk, end="", flush=True)
+# This will start an interactive chat session in the console
+interactive_chat_example()
 ```
 
 ## Implementation Status
 
-- [  ] Basic Conversation - Not started
-- [  ] Memory Management - Not started
-- [  ] Streaming Responses - Not started
-- [  ] Function Calling - Not started
-- [  ] Multimodal Support - Not started
+- [x] Basic Conversation - Implemented in simple_chat.py
+- [ ] Memory Management - Not started
+- [ ] Streaming Responses - Not started
+- [ ] Function Calling - Not started
+- [ ] Multimodal Support - Not started
 
 ## Next Steps
 
-1. Implement basic conversation handling
-2. Add memory management with token optimization
-3. Develop streaming response capabilities
-4. Create function calling examples
-5. Add multimodal conversation support
+1. Implement memory management with token optimization
+2. Develop streaming response capabilities
+3. Create function calling examples
+4. Add multimodal conversation support
+5. Build advanced examples (chatbot, QA system, agent)
 
 ## Contributing
 
 See the project [CONTRIBUTING](../../CONTRIBUTING.md) guidelines for information on how to contribute to this module.
+
+## Documentation
+
+For detailed information about the Converse API implementation, see the [Converse API chapter](../../docs/chapters/apis/converse.md) in the project documentation.
+
+## Last Updated
+
+This module was last updated on May 16, 2024.

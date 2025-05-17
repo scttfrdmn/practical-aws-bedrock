@@ -108,3 +108,15 @@ When adding new features or examples:
 2. Add comprehensive documentation with usage examples
 3. Create benchmark tests to measure performance
 4. Add tutorial content explaining when and how to use the feature
+5. Verify information is current by checking AWS documentation and announcements
+
+## Documentation Freshness
+
+To maintain high-quality, accurate documentation:
+
+1. Regularly check AWS Bedrock announcements and release notes for updates
+2. Verify code examples against the latest AWS SDK version
+3. Update model lists and capabilities when new foundation models are added
+4. Include "Last Updated" dates in documentation headers
+5. Review and update documentation at least quarterly to ensure accuracy
+6. Reference AWS official documentation when appropriate, including links to source material
