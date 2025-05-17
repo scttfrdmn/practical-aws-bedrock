@@ -1,0 +1,62 @@
+# Jekyll configuration for GitHub Pages
+
+# Site settings
+title: Practical AWS Bedrock
+description: >-
+  A comprehensive, action-oriented guide to building generative AI applications with AWS Bedrock.
+  Practical implementation patterns and optimization strategies.
+baseurl: "/practical-aws-bedrock"
+url: ""
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  
+# Theme settings
+theme: jekyll-theme-minimal
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Content settings
+show_downloads: false
+google_analytics: # Uncomment and add tracking code if desired
+
+# Navigation structure
+header_pages:
+  - index.md
+  - learning-path.md
+  - about.md
+
+# Collections for organizing content
+collections:
+  chapters:
+    output: true
+    permalink: /:collection/:path/
+  tutorials:
+    output: true
+    permalink: /:collection/:path/
+
+# Default front matter for different content types
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: "chapters"
+    values:
+      layout: chapter
+  - scope:
+      path: ""
+      type: "tutorials"
+    values:
+      layout: tutorial
+      
+# Custom variables
+author: Scott Friedman
+license: CC BY-NC-ND 4.0
