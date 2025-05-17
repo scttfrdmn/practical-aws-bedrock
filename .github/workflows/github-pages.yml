@@ -4,41 +4,25 @@ on:
   push:
     branches:
       - main
-  pull_request:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
+      - uses: actions/checkout@v3
+      - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.0'
+          ruby-version: '3.1'
           bundler-cache: true
-          
-      - name: Install dependencies
+      - name: Build Jekyll site
         run: |
-          cd docs
           gem install bundler
-          bundle init
-          bundle add jekyll -v "~>4.2"
-          bundle add jekyll-theme-minimal
-          bundle add jekyll-feed jekyll-seo-tag jekyll-sitemap
-          
-      - name: Build site
-        run: |
-          cd docs
-          bundle exec jekyll build
-          
-      - name: Upload artifact
+          bundle install
+          bundle exec jekyll build -d _site
+      - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v1
-        with:
-          path: "docs/_site/"
 
   deploy:
-    if: github.event_name == 'push'
     needs: build
     permissions:
       pages: write
@@ -50,4 +34,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v2

@@ -1,0 +1,30 @@
+title: Practical AWS Bedrock
+description: Your guide to effectively using AWS Bedrock foundation models
+baseurl: "/practical-aws-bedrock"
+url: "https://scttfrdmn.github.io"
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Directory structure
+include:
+  - docs
+  - tutorials
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .bundle
+  - src
+  - utils
+  - benchmarks
+  - CLAUDE.md
+  - LICENSE
+  - requirements.txt
