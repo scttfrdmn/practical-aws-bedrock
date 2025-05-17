@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="chapter">
+  <header class="chapter-header">
+    <h1 class="chapter-title">{{ page.title }}</h1>
+    {% if page.last_updated %}
+    <p class="last-updated">Last updated: {{ page.last_updated }}</p>
+    {% endif %}
+  </header>
+
+  <div class="chapter-content">
+    {{ content }}
+  </div>
+
+  {% if page.next_chapter %}
+  <div class="next-chapter">
+    <a href="{{ site.baseurl }}{{ page.next_chapter.url }}" class="next-link">
+      Next: {{ page.next_chapter.title }} &raquo;
+    </a>
+  </div>
+  {% endif %}
+</div>

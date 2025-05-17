@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+  {% feed_meta %}
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrapper">
+      <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+      <nav class="site-nav">
+        <a href="{{ site.baseurl }}/docs/01-introduction.html">Introduction</a>
+        <a href="{{ site.baseurl }}/docs/foundation-models.html">Models</a>
+        <a href="{{ site.baseurl }}/docs/inference-methods.html">Inference</a>
+        <a href="{{ site.baseurl }}/tutorials/">Tutorials</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      {{ content }}
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrapper">
+      <p>A comprehensive guide to working with AWS Bedrock foundation models</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,52 +1,21 @@
 ---
-layout: default
-title: Home
+layout: chapter
+title: Documentation
 ---
 
-# Practical AWS Bedrock
+# AWS Bedrock Documentation
 
-Welcome to **Practical AWS Bedrock** – a comprehensive, action-oriented guide to building generative AI applications using Amazon Bedrock.
-
-## What You'll Find Here
-
-This resource focuses on real-world implementation patterns rather than theoretical concepts. We've created a practical guide with:
-
-- **Production-ready code** with proper error handling and optimization
-- **Step-by-step tutorials** for common use cases
-- **Performance optimization techniques** for maximizing throughput
-- **Comprehensive documentation** of AWS Bedrock features
+Welcome to the AWS Bedrock documentation. Here you'll find comprehensive guides and documentation to help you start working with AWS Bedrock foundation models as quickly as possible.
 
 ## Getting Started
 
-Choose your starting point based on your needs:
-
 {% include getting-started-cards.html %}
 
-### Quick Links
+## Core Methods
 
-- [Introduction to AWS Bedrock](chapters/getting-started/introduction/)
-- [Understanding Foundation Models](chapters/getting-started/foundation-models/)
-- [Token Quota Optimization](chapters/optimization/token-quota-optimization/)
-- [Complete Learning Path](learning-path/)
+- [Asynchronous Processing]({{ site.baseurl }}/docs/chapters/core-methods/asynchronous.html)
+- [Streaming Responses]({{ site.baseurl }}/docs/chapters/core-methods/streaming.html)
 
-## Featured Topics
+## APIs
 
-### Token Quota Optimization
-
-Learn how to maximize AWS Bedrock throughput when facing constraints on token sizes and request limits. Our guide provides practical strategies for balancing these competing constraints.
-
-[Read Token Quota Optimization Guide →](chapters/optimization/token-quota-optimization/)
-
-### Streaming Inference
-
-Discover how to implement real-time streaming responses using AWS Bedrock. This approach improves user experience by delivering content progressively as it's generated.
-
-[Learn About Streaming Inference →](chapters/core-methods/streaming/)
-
-## Project Status
-
-This project is actively being developed. Check back regularly for new content and updates!
-
----
-
-© 2025 Scott Friedman. Licensed under CC BY-NC-ND 4.0
+- [Converse API]({{ site.baseurl }}/docs/chapters/apis/converse.html)
