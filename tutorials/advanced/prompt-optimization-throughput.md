@@ -1,3 +1,10 @@
+---
+layout: page
+title: Optimizing Throughput with Model-Specific Prompt Engineering
+difficulty: advanced
+time_required: 45 minutes
+---
+
 # Optimizing Throughput with Model-Specific Prompt Engineering
 
 This tutorial explores how to maximize throughput within AWS Bedrock quota limits by optimizing prompts for specific models.

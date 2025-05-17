@@ -1,3 +1,8 @@
+---
+layout: page
+title: Comparing AWS Bedrock Inference Methods
+---
+
 # Comparing AWS Bedrock Inference Methods
 
 AWS Bedrock offers multiple inference methods, each with unique characteristics and ideal use cases. This guide will help you select the right approach for your specific needs by comparing synchronous, streaming, and asynchronous inference methods side by side.

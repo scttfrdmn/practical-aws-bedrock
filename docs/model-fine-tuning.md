@@ -1,3 +1,8 @@
+---
+layout: page
+title: Model Fine-tuning in AWS Bedrock
+---
+
 # Model Fine-tuning in AWS Bedrock
 
 This guide covers the model fine-tuning capabilities in AWS Bedrock, explaining both the concepts and implementation approaches for achieving better performance on specific tasks.

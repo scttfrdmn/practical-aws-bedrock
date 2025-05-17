@@ -8,6 +8,14 @@ layout: default
     {% if page.last_updated %}
     <p class="last-updated">Last updated: {{ page.last_updated }}</p>
     {% endif %}
+    
+    {% if page.difficulty %}
+    <p class="difficulty">Difficulty: {{ page.difficulty }}</p>
+    {% endif %}
+    
+    {% if page.time-estimate %}
+    <p class="time-estimate">Estimated time: {{ page.time-estimate }}</p>
+    {% endif %}
   </header>
 
   <div class="chapter-content">

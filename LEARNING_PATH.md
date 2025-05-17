@@ -10,64 +10,64 @@ This project is organized in a progressive manner, from basic concepts to advanc
 
 Start here to understand the fundamentals:
 
-- [Introduction to AWS Bedrock Inference](/docs/01-introduction.md) - Basic concepts and overview
-- [AWS CLI Guide for Bedrock](/tutorials/basic/aws-cli-guide.md) - Basic interaction with Bedrock APIs
-- [Foundation Models in AWS Bedrock](/docs/foundation-models.md) - Understanding available models
+- [Introduction to AWS Bedrock Inference](/docs/chapters/getting-started/introduction.html) - Basic concepts and overview
+- [AWS CLI Guide for Bedrock](/tutorials/basic/aws-cli-guide.html) - Basic interaction with Bedrock APIs
+- [Foundation Models in AWS Bedrock](/docs/chapters/getting-started/foundation-models.html) - Understanding available models
 
 ### 2. Core Inference Methods
 
 Learn about the different methods for model invocation:
 
-- [Synchronous Inference (InvokeModel)](/docs/inference-methods.md) (To be added)
-- [Streaming Inference](/tutorials/basic/streaming-inference.md) (To be added)
-- [Asynchronous Processing](/tutorials/intermediate/async-inference.md) (To be added)
-- [Comparing Inference Methods](/tutorials/intermediate/inference-methods-comparison.md) (To be added)
+- [Synchronous Inference (InvokeModel)](/docs/chapters/core-methods/synchronous.html)
+- [Streaming Inference](/docs/chapters/core-methods/streaming.html)
+- [Asynchronous Processing](/docs/chapters/core-methods/asynchronous.html)
+- [Comparing Inference Methods](/docs/inference-methods-comparison.html)
 
 ### 3. Working with Quotas
 
 Understand and optimize within quota constraints:
 
-- [Understanding AWS Bedrock Quotas](/docs/quota-management.md)
-- [Discovering and Managing Quotas](/tutorials/intermediate/quota-discovery.md)
-- [Error Handling and Retry Strategies](/tutorials/intermediate/error-handling.md) (To be added)
+- [Understanding AWS Bedrock Quotas](/docs/quota-management.html)
+- [Discovering and Managing Quotas](/tutorials/intermediate/quota-discovery.html)
+- [Error Handling and Retry Strategies](/tutorials/intermediate/error-handling.html)
 
 ### 4. Optimizing Prompts
 
 Learn how to structure and optimize prompts:
 
-- [Prompt Engineering Across Models](/docs/prompt-engineering.md)
-- [Optimizing Throughput with Prompt Engineering](/tutorials/advanced/prompt-optimization-throughput.md)
+- [Prompt Engineering Across Models](/docs/prompt-engineering.html)
+- [Optimizing Throughput with Prompt Engineering](/tutorials/advanced/prompt-optimization-throughput.html)
 
 ### 5. Advanced APIs and Features
 
 Explore more advanced Bedrock capabilities:
 
-- [Conversational AI with Converse API](/tutorials/intermediate/converse-api.md) (To be added)
-- [Structured Outputs with Construct API](/tutorials/intermediate/construct-api.md) (To be added)
-- [Model Fine-tuning](/tutorials/advanced/model-fine-tuning.md) (To be added)
+- [Conversational AI with Converse API](/docs/chapters/apis/converse.html)
+- [Structured Outputs with Construct API](/docs/construct-api-guide.html)
+- [Model Fine-tuning](/docs/model-fine-tuning.html)
 
 ### 6. Putting It All Together
 
 Comprehensive examples that combine multiple techniques:
 
-- [Building a High-Throughput Processing Pipeline](/tutorials/advanced/high-throughput-pipeline.md) (To be added)
-- [Multi-Model Inference Orchestration](/tutorials/advanced/multi-model-orchestration.md) (To be added)
-- [Production Deployment Patterns](/tutorials/advanced/production-deployment.md) (To be added)
+- [Building a High-Throughput Processing Pipeline](/docs/high-throughput-pipeline.html)
+- [Multi-Model Inference Orchestration](/docs/multi-model-orchestration.html)
+- [Production Deployment Patterns](/docs/production-deployment-patterns.html)
 
 ## Quick Reference
 
 ### By Topic
 
-- **Quota Management**: [Understanding Quotas](/docs/quota-management.md), [Quota Discovery](/tutorials/intermediate/quota-discovery.md)
-- **Prompt Engineering**: [Prompt Engineering Guide](/docs/prompt-engineering.md), [Throughput Optimization](/tutorials/advanced/prompt-optimization-throughput.md)
-- **Model Selection**: [Foundation Models Guide](/docs/foundation-models.md)
-- **API Usage**: [AWS CLI Guide](/tutorials/basic/aws-cli-guide.md)
+- **Quota Management**: [Understanding Quotas](/docs/quota-management.html), [Quota Discovery](/tutorials/intermediate/quota-discovery.html)
+- **Prompt Engineering**: [Prompt Engineering Guide](/docs/prompt-engineering.html), [Throughput Optimization](/tutorials/advanced/prompt-optimization-throughput.html)
+- **Model Selection**: [Foundation Models Guide](/docs/chapters/getting-started/foundation-models.html)
+- **API Usage**: [AWS CLI Guide](/tutorials/basic/aws-cli-guide.html)
 
 ### By Difficulty Level
 
-- **Beginner**: [Introduction](/docs/01-introduction.md), [AWS CLI Guide](/tutorials/basic/aws-cli-guide.md)
-- **Intermediate**: [Quota Discovery](/tutorials/intermediate/quota-discovery.md)
-- **Advanced**: [Prompt Optimization](/tutorials/advanced/prompt-optimization-throughput.md)
+- **Beginner**: [Introduction](/docs/chapters/getting-started/introduction.html), [AWS CLI Guide](/tutorials/basic/aws-cli-guide.html)
+- **Intermediate**: [Quota Discovery](/tutorials/intermediate/quota-discovery.html)
+- **Advanced**: [Prompt Optimization](/tutorials/advanced/prompt-optimization-throughput.html)
 
 ## Working Through the Tutorials
 

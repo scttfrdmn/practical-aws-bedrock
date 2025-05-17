@@ -1,3 +1,8 @@
+---
+layout: page
+title: Multi-Model Inference Orchestration in AWS Bedrock
+---
+
 # Multi-Model Inference Orchestration in AWS Bedrock
 
 This guide covers strategies and implementation approaches for orchestrating inference across multiple foundation models in AWS Bedrock. Learn how to build robust systems that leverage the strengths of different models for optimal performance.

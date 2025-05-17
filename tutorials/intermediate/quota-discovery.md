@@ -1,3 +1,10 @@
+---
+layout: page
+title: Discovering and Managing AWS Bedrock Quotas
+difficulty: intermediate
+time_required: 30 minutes
+---
+
 # Discovering and Managing AWS Bedrock Quotas
 
 This tutorial explains how to discover, monitor, and work within AWS Bedrock's quota limits using both AWS CLI and Python.

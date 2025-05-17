@@ -1299,7 +1299,7 @@ def execute_with_backoff(func: Callable, max_retries: int = 5, base_delay: float
             if attempt == max_retries or not is_throttling:
                 raise
             
-            # Calculate backoff time with jitter
+            # Calculate backoff time with exponential backoff and jitter
             backoff = base_delay * (2 ** attempt)
             jitter = backoff * 0.2
             delay = backoff + random.uniform(-jitter, jitter)

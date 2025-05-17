@@ -1,3 +1,8 @@
+---
+layout: page
+title: Prompt Engineering Across AWS Bedrock Models
+---
+
 # Prompt Engineering Across AWS Bedrock Models
 
 This guide explores the different prompt structures, formats, and optimization techniques for the various foundation models available in AWS Bedrock. Proper prompt engineering is essential not only for achieving optimal results but also for maximizing throughput within quota limits.

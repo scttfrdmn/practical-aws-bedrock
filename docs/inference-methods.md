@@ -1,3 +1,8 @@
+---
+layout: page
+title: AWS Bedrock Inference Methods
+---
+
 # AWS Bedrock Inference Methods
 
 This document provides a comprehensive overview of the various inference methods available in AWS Bedrock, their use cases, advantages, and implementation details.

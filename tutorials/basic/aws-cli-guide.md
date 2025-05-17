@@ -1,3 +1,10 @@
+---
+layout: page
+title: AWS CLI Guide for Bedrock
+difficulty: basic
+time_required: 20 minutes
+---
+
 # AWS CLI Guide for Bedrock
 
 This tutorial explains how to use the AWS Command Line Interface (CLI) to work with Amazon Bedrock services.

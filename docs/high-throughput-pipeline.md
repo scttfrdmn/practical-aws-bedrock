@@ -1,3 +1,8 @@
+---
+layout: page
+title: Building High-Throughput Processing Pipelines with AWS Bedrock
+---
+
 # Building High-Throughput Processing Pipelines with AWS Bedrock
 
 This guide covers strategies and architectural patterns for building high-throughput processing pipelines with AWS Bedrock. By combining different inference methods, quota management techniques, and AWS services, you can create scalable pipelines for efficiently processing large volumes of requests.

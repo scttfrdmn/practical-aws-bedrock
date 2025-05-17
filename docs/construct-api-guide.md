@@ -1,3 +1,8 @@
+---
+layout: page
+title: Structured Outputs with AWS Bedrock Construct API
+---
+
 # Structured Outputs with AWS Bedrock Construct API
 
 The AWS Bedrock Construct API enables developers to generate structured, schema-conformant data from foundation models. This specialized API solves one of the most challenging problems in working with LLMs: getting consistent, parseable outputs in formats like JSON or XML.

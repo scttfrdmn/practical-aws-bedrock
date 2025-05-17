@@ -1,3 +1,8 @@
+---
+layout: page
+title: Production Deployment Patterns for AWS Bedrock
+---
+
 # Production Deployment Patterns for AWS Bedrock
 
 This guide covers best practices and architectural patterns for deploying AWS Bedrock applications in production environments. It addresses critical considerations around reliability, scalability, monitoring, and cost optimization to ensure your foundation model applications perform well in real-world scenarios.

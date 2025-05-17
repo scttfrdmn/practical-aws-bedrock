@@ -1,3 +1,10 @@
+---
+layout: page
+title: Error Handling and Retry Strategies for AWS Bedrock
+difficulty: intermediate
+time_required: 30 minutes
+---
+
 # Error Handling and Retry Strategies for AWS Bedrock
 
 This tutorial explores robust error handling and retry strategies for AWS Bedrock, with a focus on managing throttling and quota limitations.

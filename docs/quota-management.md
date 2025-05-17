@@ -1,3 +1,8 @@
+---
+layout: page
+title: Understanding and Managing AWS Bedrock Quota Limits
+---
+
 # Understanding and Managing AWS Bedrock Quota Limits
 
 AWS Bedrock imposes various quota limits to ensure fair usage across all customers. This guide explores how to discover, monitor, and optimize your usage within these limits.
