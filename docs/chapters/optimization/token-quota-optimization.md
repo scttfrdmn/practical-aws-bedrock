@@ -1127,4 +1127,4 @@ class DynamicPromptOptimizer:
 
 *Have questions or suggestions? Open an issue or contribute improvements!*
 
-© 2025 Scott Friedman. All rights reserved.
+© 2025 Scott Friedman. Licensed under CC BY-NC-ND 4.0

@@ -322,4 +322,4 @@ The site will be deployed automatically from the `main` branch using GitHub Page
 4. Convert initial content to Jekyll format
 5. Test and deploy first version
 
-© 2025 Scott Friedman. All rights reserved.
+© 2025 Scott Friedman. Licensed under CC BY-NC-ND 4.0

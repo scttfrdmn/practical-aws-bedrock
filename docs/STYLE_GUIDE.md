@@ -120,4 +120,4 @@ Before submitting content, ensure it meets these criteria:
 
 By following this style guide, we'll create content that's not only technically accurate but also engaging, accessible, and immediately useful to our readers.
 
-© 2025 Scott Friedman. All rights reserved.
+© 2025 Scott Friedman. Licensed under CC BY-NC-ND 4.0
