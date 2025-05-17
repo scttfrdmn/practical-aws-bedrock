@@ -128,4 +128,6 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 
 ---
 
+© 2025 Scott Friedman. All rights reserved.
+
 *This resource is not affiliated with or endorsed by Amazon Web Services.*

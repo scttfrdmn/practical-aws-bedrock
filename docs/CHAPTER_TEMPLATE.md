@@ -135,3 +135,5 @@ Instead of fixed token limits, dynamically adjust your request patterns based on
 ---
 
 *Have questions or suggestions? [Open an issue](https://github.com/YOUR-USERNAME/practical-aws-bedrock/issues) or contribute improvements!*
+
+© 2025 Scott Friedman. All rights reserved.

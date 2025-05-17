@@ -321,3 +321,5 @@ The site will be deployed automatically from the `main` branch using GitHub Page
 3. Customize theme and navigation
 4. Convert initial content to Jekyll format
 5. Test and deploy first version
+
+© 2025 Scott Friedman. All rights reserved.
